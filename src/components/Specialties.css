@@ -192,8 +192,8 @@
   .specialty-card,
   .specialty-card.specialty-reversed {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 2.25rem 1.75rem;
+    gap: 2rem;
+    padding: 2.25rem 1.5rem;
   }
   .specialty-card.specialty-reversed .specialty-text-wrap {
     order: 1;
@@ -202,14 +202,36 @@
     order: 2;
   }
   .specialty-media-wrap {
-    min-height: 280px;
+    min-height: 260px;
   }
   .specialty-img {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
   .specialty-circle-blob {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 520px) {
+  .specialties-section {
+    padding: 4.5rem 0;
+  }
+  .specialty-card,
+  .specialty-card.specialty-reversed {
+    padding: 1.6rem 1.15rem;
+    margin-bottom: 3.5rem;
+  }
+  .specialty-img {
+    width: 200px;
+    height: 200px;
+  }
+  .specialty-circle-blob {
+    width: 200px;
+    height: 200px;
+  }
+  .specialty-item-title {
+    font-size: 1.6rem;
   }
 }

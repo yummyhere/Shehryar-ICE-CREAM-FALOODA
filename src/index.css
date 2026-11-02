@@ -103,6 +103,13 @@ img {
   padding-right: 1.5rem;
 }
 
+@media (max-width: 540px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }

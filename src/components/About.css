@@ -223,7 +223,17 @@
 
 @media (max-width: 560px) {
   .about-section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
+  }
+  .about-heading {
+    font-size: clamp(1.9rem, 7vw, 2.5rem);
+  }
+  .about-core-quote {
+    font-size: 1.05rem;
+    padding-left: 1rem;
+  }
+  .about-paragraphs {
+    font-size: 0.92rem;
   }
   .about-image-primary-wrap {
     width: 100%;
@@ -231,7 +241,7 @@
   .about-image-secondary-wrap {
     position: relative;
     width: 90%;
-    margin: -40px auto 0;
+    margin: -30px auto 0;
     bottom: auto;
     right: auto;
   }

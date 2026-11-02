@@ -464,57 +464,216 @@
   font-size: 0.84rem;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .flavour-stage-container {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    overflow-y: auto;
+/* Responsive (Tablets & Mobile) */
+@media (max-width: 900px) {
+  .flavour-experience-section {
+    padding: 0;
   }
-  .flavour-text-column {
-    min-height: auto;
-    text-align: center;
+
+  .flavour-showcase-header {
+    padding: 0.85rem 1rem 0.25rem;
+  }
+
+  .showcase-header-inner {
     justify-content: center;
   }
-  .flavour-slide {
-    position: relative;
-    top: auto;
-    transform: none;
+
+  .showcase-scroll-hint {
+    display: none;
   }
+
+  .flavour-stage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0 1rem;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  /* 1. Ice Cream Image on TOP on mobile */
+  .flavour-image-column {
+    order: 1;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .flavour-images-stack {
+    width: 210px;
+    height: 210px;
+  }
+
+  .flavour-aura-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .flavour-image-item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .floating-flavour-badge {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.66rem;
+  }
+
+  .badge-pos-1 {
+    top: 5px;
+    left: -10px;
+  }
+
+  .badge-pos-2 {
+    bottom: 10px;
+    right: -10px;
+  }
+
+  .badge-pos-3 {
+    display: none;
+  }
+
+  /* 2. Text Stack BELOW Image on mobile */
+  .flavour-text-column {
+    order: 2;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Overlaid slides: NO stacking */
+  .flavour-slide {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
   .flavour-meta-top {
     justify-content: center;
+    gap: 0.5rem;
   }
+
+  .flavour-number {
+    font-size: 1.05rem;
+  }
+
+  .flavour-divider-line {
+    width: 20px;
+  }
+
+  .flavour-subheading-tag {
+    font-size: 0.68rem;
+  }
+
+  .flavour-heading {
+    font-size: 1.75rem;
+    line-height: 1.05;
+  }
+
+  .flavour-lead-quote {
+    font-size: 0.88rem;
+    line-height: 1.25;
+    max-width: 320px;
+  }
+
   .flavour-story-body {
-    margin: 0 auto;
+    display: none;
   }
+
+  .flavour-tasting-notes {
+    padding-top: 0.1rem;
+    gap: 0.25rem;
+  }
+
+  .notes-label {
+    display: none;
+  }
+
   .notes-tags-group {
     justify-content: center;
+    gap: 0.35rem;
   }
+
+  .tasting-tag {
+    padding: 0.18rem 0.55rem;
+    font-size: 0.68rem;
+  }
+
   .flavour-action-row {
     justify-content: center;
+    gap: 0.75rem;
+    padding-top: 0.25rem;
   }
-  .flavour-images-stack {
-    width: 260px;
-    height: 260px;
-  }
-  .flavour-aura-circle {
-    width: 250px;
-    height: 250px;
-  }
-  .flavour-image-item {
-    width: 230px;
-    height: 230px;
-  }
-  .flavour-image-column {
-    min-height: 240px;
-  }
-}
 
-@media (max-width: 768px) {
+  .flavour-add-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .flavour-view-menu-link {
+    font-size: 0.78rem;
+  }
+
+  /* 3. Bottom Stepper on mobile */
+  .flavour-bottom-stepper {
+    padding: 0.6rem 0.75rem 0.75rem;
+  }
+
+  .stepper-container {
+    gap: 0.6rem;
+    justify-content: space-between;
+  }
+
+  .stepper-arrow-group {
+    gap: 0.35rem;
+  }
+
+  .stepper-nav-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stepper-track {
+    gap: 0.4rem;
+  }
+
   .bullet-title-text {
     display: none;
   }
-  .stepper-track {
-    gap: 0.6rem;
+
+  .stepper-bullet {
+    padding: 0.35rem;
+    background: transparent;
+  }
+
+  .stepper-bullet.active-bullet {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .bullet-indicator {
+    width: 8px;
+    height: 8px;
+  }
+
+  .stepper-counter {
+    font-size: 0.92rem;
   }
 }

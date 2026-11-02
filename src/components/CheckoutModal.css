@@ -337,3 +337,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 540px) {
+  .checkout-modal-overlay {
+    padding: 0.5rem;
+  }
+  .checkout-modal-container {
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+  .checkout-modal-header {
+    padding: 1rem 1.15rem;
+  }
+  .checkout-modal-body {
+    padding: 1rem;
+    gap: 1.15rem;
+  }
+  .order-type-tabs {
+    grid-template-columns: 1fr;
+  }
+}

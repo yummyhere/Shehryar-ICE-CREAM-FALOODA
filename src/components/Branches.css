@@ -256,3 +256,21 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 540px) {
+  .branches-section {
+    padding: 4.5rem 0;
+  }
+  .branch-card {
+    padding: 1.5rem 1.15rem;
+  }
+  .branch-card-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .btn-branch-direction,
+  .btn-select-branch {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
