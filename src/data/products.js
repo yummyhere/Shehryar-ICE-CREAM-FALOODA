@@ -1,0 +1,110 @@
+export const productsData = [
+  {
+    id: 'prod-strawberry',
+    name: 'Fresh Strawberry Natural Scoop',
+    category: 'Ice Cream',
+    price: 250,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Real farm milk churned with handpicked strawberry compote. Creamy, tangy, and naturally sweet.',
+    image: '/images/flavours/strawberry.jpg',
+    badge: 'Popular',
+    rating: 4.9,
+    flavoursMatch: 'strawberry'
+  },
+  {
+    id: 'prod-chocolate',
+    name: 'Belgian Dark Chocolate Scoop',
+    category: 'Ice Cream',
+    price: 280,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Decadent dark chocolate churned in whole buffalo milk with crunchy roasted cocoa flakes.',
+    image: '/images/flavours/chocolate.jpg',
+    badge: 'Rich & Dark',
+    rating: 4.8,
+    flavoursMatch: 'chocolate'
+  },
+  {
+    id: 'prod-vanilla',
+    name: 'Madagascar Vanilla Bean Cream',
+    category: 'Ice Cream',
+    price: 240,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Pure, silky natural milk ice cream infused with aromatic whole vanilla bean pods.',
+    image: '/images/flavours/vanilla.jpg',
+    badge: 'Classic',
+    rating: 4.7,
+    flavoursMatch: 'vanilla'
+  },
+  {
+    id: 'prod-mango',
+    name: 'Chaunsa Mango Gold Scoop',
+    category: 'Ice Cream',
+    price: 280,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Sweet golden mango pulp churned with thick cream for an authentic taste of summer.',
+    image: '/images/flavours/mango.jpg',
+    badge: 'Seasonal Star',
+    rating: 5.0,
+    flavoursMatch: 'mango'
+  },
+  {
+    id: 'prod-pistachio',
+    name: 'Artisanal Pista (Pistachio) Scoop',
+    category: 'Ice Cream',
+    price: 320,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Slow-roasted emerald pistachios gently blended with aromatic cardamom and pure milk.',
+    image: '/images/flavours/pistachio.jpg',
+    badge: 'Chef Choice',
+    rating: 4.9,
+    flavoursMatch: 'pistachio'
+  },
+  {
+    id: 'prod-cookies-cream',
+    name: 'Cookies & Sweet Cream',
+    category: 'Ice Cream',
+    price: 290,
+    unit: 'Single Gourmet Cup / Cone',
+    description: 'Crisp cocoa cookies crunched into velvety sweet cream for that irresistible bite.',
+    image: '/images/flavours/cookies-cream.jpg',
+    badge: 'Kids Favourite',
+    rating: 4.8,
+    flavoursMatch: 'cookies-cream'
+  },
+  {
+    id: 'prod-falooda-special',
+    name: 'Shehryar Royal Special Falooda',
+    category: 'Falooda',
+    price: 350,
+    unit: 'Tall Signature Crystal Glass',
+    description: 'Our crown jewel: layered ruby rose syrup, silky vermicelli noodles, basil seeds, thick rabri, topped with kulfi scoop & nuts.',
+    image: '/images/flavours/falooda.jpg',
+    badge: 'Bestseller',
+    rating: 5.0,
+    flavoursMatch: 'falooda'
+  },
+  {
+    id: 'prod-falooda-kulfi-rabri',
+    name: 'Traditional Kulfi Rabri Falooda',
+    category: 'Falooda',
+    price: 330,
+    unit: 'Classic Bowl / Glass',
+    description: 'Thick traditional condensed rabri poured over cold vermicelli noodles, sliced khoya kulfi, and crushed almonds.',
+    image: '/images/flavours/falooda.jpg',
+    badge: 'Authentic Heritage',
+    rating: 4.9,
+    flavoursMatch: 'falooda'
+  },
+  {
+    id: 'prod-falooda-pista',
+    name: 'Pistachio Rabri Falooda Deluxe',
+    category: 'Falooda',
+    price: 380,
+    unit: 'Deluxe Glass with Nuts',
+    description: 'Generously loaded with crushed Iranian pistachios, rabri milk, rose drizzle, and double pistachio ice cream.',
+    image: '/images/flavours/falooda.jpg',
+    badge: 'Deluxe',
+    rating: 4.9,
+    flavoursMatch: 'falooda'
+  }
+];

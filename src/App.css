@@ -1,0 +1,68 @@
+/* App Level Styles */
+.shehryar-website-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Floating Toast Alert */
+.app-toast-alert {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #FFFFFF;
+  color: var(--color-dark-rose);
+  padding: 0.85rem 1.45rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 14px 40px rgba(169, 68, 88, 0.22);
+  border: 1.5px solid var(--color-primary-pink);
+  z-index: 1200;
+  animation: toastSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes toastSlideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast-icon-wrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-soft-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-pink);
+}
+
+.toast-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .app-toast-alert {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    left: 1.25rem;
+    justify-content: center;
+  }
+}

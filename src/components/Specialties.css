@@ -1,0 +1,215 @@
+/* Specialties CSS */
+.specialties-section {
+  padding: 7rem 0;
+  background-color: var(--color-light-pink);
+  position: relative;
+}
+
+.specialties-header {
+  max-width: 650px;
+  margin: 0 auto 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.specialties-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  color: var(--color-dark-rose);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.specialties-lead {
+  font-size: 1.05rem;
+  color: var(--color-muted-text);
+  line-height: 1.6;
+}
+
+/* Staggered Feature Cards */
+.specialty-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5.5rem;
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid rgba(232, 139, 155, 0.22);
+  box-shadow: 0 14px 40px rgba(169, 68, 88, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.specialty-card:last-child {
+  margin-bottom: 0;
+}
+
+.specialty-card.specialty-reversed {
+  grid-template-columns: 0.95fr 1.15fr;
+}
+
+.specialty-card.specialty-reversed .specialty-text-wrap {
+  order: 2;
+}
+
+.specialty-card.specialty-reversed .specialty-media-wrap {
+  order: 1;
+}
+
+/* Text wrap */
+.specialty-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.specialty-num-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--color-primary-pink);
+  text-transform: uppercase;
+}
+
+.specialty-item-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-dark-rose);
+  line-height: 1.15;
+}
+
+.specialty-desc {
+  font-size: 1rem;
+  color: var(--color-dark-text);
+  line-height: 1.7;
+}
+
+.specialty-perks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.specialty-perks-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-dark-text);
+}
+
+.perk-icon {
+  color: var(--color-primary-pink);
+  flex-shrink: 0;
+}
+
+.specialty-cta-wrap {
+  padding-top: 0.5rem;
+}
+
+/* Media wrap */
+.specialty-media-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.specialty-circle-blob {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.5;
+  filter: blur(20px);
+}
+
+.blob-pistachio {
+  background: #DCE8C9;
+}
+
+.blob-falooda {
+  background: #F9DCE2;
+}
+
+.blob-mango {
+  background: #F8D98A;
+}
+
+.specialty-img {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 48px rgba(73, 53, 58, 0.16);
+  border: 6px solid #FFFFFF;
+  transition: transform 0.4s ease;
+}
+
+.specialty-card:hover .specialty-img {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.specialty-floating-label {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  background: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-dark-rose);
+  box-shadow: 0 8px 24px rgba(73, 53, 58, 0.12);
+  border: 1px solid rgba(232, 139, 155, 0.3);
+}
+
+.label-rose {
+  color: #A94458;
+}
+
+.label-golden {
+  color: #77451C;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .specialty-card,
+  .specialty-card.specialty-reversed {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.25rem 1.75rem;
+  }
+  .specialty-card.specialty-reversed .specialty-text-wrap {
+    order: 1;
+  }
+  .specialty-card.specialty-reversed .specialty-media-wrap {
+    order: 2;
+  }
+  .specialty-media-wrap {
+    min-height: 280px;
+  }
+  .specialty-img {
+    width: 260px;
+    height: 260px;
+  }
+  .specialty-circle-blob {
+    width: 260px;
+    height: 260px;
+  }
+}

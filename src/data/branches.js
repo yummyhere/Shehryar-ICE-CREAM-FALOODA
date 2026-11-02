@@ -1,0 +1,50 @@
+export const branchesData = [
+  {
+    id: 'branch-machli-bazar',
+    name: 'Machli Bazar Main Branch',
+    status: 'Confirmed Official Branch',
+    address: 'Farooq Road, Machli Bazar, Toba Tek Singh, Punjab, Pakistan',
+    shortAddress: 'Farooq Road, Machli Bazar',
+    phone: '+92 301 6565418',
+    phoneClean: '+923016565418',
+    whatsapp: '+92 301 6565418',
+    whatsappClean: '923016565418',
+    hours: '11:00 AM – 01:30 AM (Daily)',
+    isConfirmed: true,
+    mapQuery: 'Farooq+Road+Machli+Bazar+Toba+Tek+Singh',
+    tag: 'Flagship Branch',
+    note: 'Walk-ins, takeaway, and local WhatsApp delivery dispatch.'
+  },
+  {
+    id: 'branch-placeholder-2',
+    name: 'Toba Branch 02 (Editable Placeholder)',
+    status: 'Branch Address Pending Confirmation',
+    address: 'Branch 02 Location, Toba Tek Singh (Exact address will be updated once confirmed by client)',
+    shortAddress: 'Branch 02, Toba Tek Singh',
+    phone: '+92 346 7273552',
+    phoneClean: '+923467273552',
+    whatsapp: '+92 346 7273552',
+    whatsappClean: '923467273552',
+    hours: '12:00 PM – 01:00 AM (Daily)',
+    isConfirmed: false,
+    mapQuery: null,
+    tag: 'Branch 02',
+    note: 'Call or WhatsApp ahead for order pick-up.'
+  },
+  {
+    id: 'branch-placeholder-3',
+    name: 'Toba Branch 03 (Editable Placeholder)',
+    status: 'Branch Address Pending Confirmation',
+    address: 'Branch 03 Location, Toba Tek Singh (Exact address will be updated once confirmed by client)',
+    shortAddress: 'Branch 03, Toba Tek Singh',
+    phone: '+92 301 6565418',
+    phoneClean: '+923016565418',
+    whatsapp: '+92 301 6565418',
+    whatsappClean: '923016565418',
+    hours: '12:00 PM – 01:00 AM (Daily)',
+    isConfirmed: false,
+    mapQuery: null,
+    tag: 'Branch 03',
+    note: 'Call or WhatsApp ahead for order pick-up.'
+  }
+];
